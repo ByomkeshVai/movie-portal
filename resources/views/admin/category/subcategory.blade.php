@@ -8,7 +8,10 @@
                     <table class="table table--light style--two">
                         <thead>
                         <tr>
-                                
+                                <th>@lang('Name')</th>
+                                <th>@lang('Category')</th>
+                                <th>@lang('Status')</th>
+                                <th>@lang('Action')</th>
                             </tr>
                         </thead>
                         <tbody class="list">
