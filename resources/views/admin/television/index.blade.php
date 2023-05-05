@@ -14,22 +14,7 @@
                                 <th scope="col">@lang('Action')</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            @forelse($televisions as $television)
-                            <tr>
-                                <td data-label="@lang('Title')">{{ __($television->title) }}</td>
-                                <td data-label="@lang('Status')">
-                                    @if($television->status == 1)
-                                    <span class="badge badge--success">@lang('Enabled')</span>
-                                    @else
-                                    <span class="badge badge--danger">@lang('Disabled')</span>
-                                    @endif
-                                </td>
-                                <td data-label="@lang('Action')">
-                                    <button class="btn btn-sm btn-outline--primary editBtn" data-television="{{ $television }}" data-image="{{ getImage(getFilePath('television').'/'.$television->image, getFileSize('television')) }}"><i class="la la-pencil"></i>@lang('Edit')</button>
-                                    <button class="btn btn-sm btn-outline--danger confirmationBtn" data-question="@lang('Are you sure to delete this television?')" data-action="{{ route('admin.television.delete', $television->id) }}" data-submit_text="btn btn--primary"><i class="la la-trash"></i>@lang('Delete')</button>
-                                </td>
-                            </tr>
+                        
                             @empty
                             <tr>
                                 <td colspan="100%" class="text-center">{{ __($emptyMessage) }}</td>
