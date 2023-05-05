@@ -18,7 +18,7 @@
                             </thead>
                             <tbody>
                             @forelse($subscribers as $subscriber)
-                                <tr>
+                            <tr>
                                     <td data-label="@lang('Email')">{{ $subscriber->email }}</td>
                                     <td data-label="@lang('Subscribed At')">{{ showDateTime($subscriber->created_at) }}</td>
                                     <td data-label="@lang('Action')">
@@ -51,10 +51,8 @@
 
 
     </div>
-
     <x-confirmation-modal></x-confirmation-modal>
 @endsection
-
 @push('breadcrumb-plugins')
     <a href="{{ route('admin.subscriber.send.email') }}" class="btn btn-sm btn-outline--primary" ><i class="las la-paper-plane"></i>@lang('Send Email')</a>
 @endpush
