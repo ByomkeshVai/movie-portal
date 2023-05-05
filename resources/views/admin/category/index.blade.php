@@ -16,7 +16,7 @@
                         </thead>
                         <tbody>
                             @forelse($categories as $category)
-                                <tr>
+                            <tr>
                                     <td data-label="@lang('Name')">{{ __($category->name) }}</td>
                                     <td data-label="@lang('Status')">
                                         @if($category->status == 1)
