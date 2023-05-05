@@ -7,11 +7,8 @@
                 <div class="table-responsive--sm table-responsive">
                     <table class="table table--light style--two">
                         <thead>
-                            <tr>
-                                <th>@lang('Name')</th>
-                                <th>@lang('Category')</th>
-                                <th>@lang('Status')</th>
-                                <th>@lang('Action')</th>
+                        <tr>
+                                
                             </tr>
                         </thead>
                         <tbody class="list">
