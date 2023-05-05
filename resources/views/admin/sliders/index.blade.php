@@ -1,6 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('panel')
+
     <div class="row">
         <div class="col-lg-12">
             <div class="card b-radius--10 ">
@@ -55,7 +56,6 @@
             </div><!-- card end -->
         </div>
     </div>
-
 
     <!-- Slider Modal -->
     <div class="modal fade" id="sliderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -134,7 +134,6 @@
 @endpush
 @push('script')
     <script>
-        
 
         var modal = $('#sliderModal');
         var defautlImage = `{{ getImage(getFilePath('slider'), getFileSize('slider')) }}`;
@@ -200,4 +199,5 @@
         });
 
     </script>
+
 @endpush
