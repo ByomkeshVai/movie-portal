@@ -7,13 +7,7 @@
                 <div class="table-responsive--sm table-responsive">
                     <table class="table table--light style--two">
                         <thead>
-                            <tr>
-                                <th scope="col">@lang('Title')</th>
-                                <th scope="col">@lang('Type')</th>
-                                <th scope="col">@lang('Click')</th>
-                                <th scope="col">@lang('Impression')</th>
-	                            <th scope="col">@lang('Action')</th>
-                            </tr>
+                            
                         </thead>
                         <tbody>
                             @forelse($ads as $ad)
