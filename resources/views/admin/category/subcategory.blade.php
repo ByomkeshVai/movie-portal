@@ -6,12 +6,12 @@
             <div class="card-body p-0">
                 <div class="table-responsive--sm table-responsive">
                     <table class="table table--light style--two">
-                        <thead>
+                        <thead> 
                         <tr>
-                                <th>@lang('Name')</th>
-                                <th>@lang('Category')</th>
-                                <th>@lang('Status')</th>
-                                <th>@lang('Action')</th>
+                                 <th>@lang ('Name')</th>
+                                 <th>@lang ('Category')</th>
+                                 <th>@lang ('Status')</th>
+                                 <th>@lang ('Action')</th>
                             </tr>
                         </thead>
                         <tbody class="list">
