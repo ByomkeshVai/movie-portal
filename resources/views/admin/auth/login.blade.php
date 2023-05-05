@@ -12,18 +12,7 @@
                             <p class="text-white">{{ __($pageTitle) }} @lang('to') {{ __($general->site_name) }}
                                 @lang('Dashboard')</p>
                         </div>
-                        <div class="login-wrapper__body">
-                            <form action="{{ route('admin.login') }}" method="POST"
-                                class="cmn-form mt-30 verify-gcaptcha login-form">
-                                @csrf
-                                <div class="form-group">
-                                    <label>@lang('Username')</label>
-                                    <input type="text" class="form-control" value="{{ old('username') }}" name="username" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>@lang('Password')</label>
-                                    <input type="password" class="form-control" name="password" required>
-                                </div>
+                        
                                 <x-captcha></x-captcha>
                                 <div class="d-flex flex-wrap justify-content-between">
                                     <div class="form-check me-3">
