@@ -43,10 +43,6 @@
 
 <script src="{{ asset('assets/admin/js/nicEdit.js') }}"></script>
 
-<script src="{{asset('assets/admin/js/vendor/prism.js')}}"></script>
-<script src="{{asset('assets/admin/js/vendor/select2.min.js')}}"></script>
-<script src="{{asset('assets/admin/js/app.js')}}"></script>
-
 {{-- LOAD NIC EDIT --}}
 <script>
     "use strict";
@@ -56,7 +52,11 @@
             new nicEditor({fullPanel : true}).panelInstance('nicEditor'+index,{hasPanel : true});
         });
     });
-    
+    (function($){
+        $( document ).on('mouseover ', '.nicEdit-main,.nicEdit-panelContain',function(){
+            $('.nicEdit-main').focus();
+        });
+    })(jQuery);
 </script>
 
 @stack('script')
